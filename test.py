@@ -23,7 +23,7 @@ OUTER_RADIUS = 15
 INNER_RADIUS = 15
 PADDING = 10
 
-bckg_1 = Button((300, 460))
+bckg_1 = Button((300, 460), RED)
 
 # Draw text
 def draw_text(text, x, y, center=False):
