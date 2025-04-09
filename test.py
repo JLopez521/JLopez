@@ -45,10 +45,6 @@ class Button:
     def is_pressed(self, pos):
         return self.rect.collidepoint(pos)
 
-class Background:
-    def draw(self):
-        pygame.draw(scree, RED, border_radius=320)
-
 # Format time to HH:MM:SS
 def format_time(seconds):
     hours = int(seconds // 3600)
@@ -89,7 +85,7 @@ def run_timer_app():
 
     while True:
         screen.fill(BASE)
-        Background.draw()
+        screen.draw(RED, radius=300)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
