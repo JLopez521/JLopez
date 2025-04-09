@@ -13,6 +13,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (200, 200, 200)
 BLUE = (100, 149, 237)
+BASE = (107, 106, 105)
 
 # Draw text
 def draw_text(text, x, y, center=False):
@@ -75,7 +76,7 @@ def run_timer_app():
     dec_s5 = Button((260, 230, 70, 40), "-5s")
 
     while True:
-        screen.fill(WHITE)
+        screen.fill(BASE)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
