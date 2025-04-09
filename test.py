@@ -18,11 +18,6 @@ RED = (161, 73, 67)
 LIGHT_GRAY = (217, 217, 217)
 GOLD = (194, 148, 83)
 
-BORDER_WIDTH = 4
-OUTER_RADIUS = 15
-INNER_RADIUS = 15
-PADDING = 10
-
 # Draw text
 def draw_text(text, x, y, center=False):
     txt_surface = font.render(text, True, BLACK)
@@ -85,7 +80,6 @@ def run_timer_app():
 
     while True:
         screen.fill(BASE)
-        screen.draw(RED, radius=300)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
