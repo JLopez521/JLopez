@@ -4,7 +4,7 @@ import sys
 
 # Initialize pygame
 pygame.init()
-screen = pygame.display.set_mode((480, 320))
+screen = pygame.display.set_mode((320, 480))
 pygame.display.set_caption("Timer & Stopwatch")
 font = pygame.font.SysFont(None, 32)
 
