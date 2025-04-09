@@ -23,8 +23,6 @@ OUTER_RADIUS = 15
 INNER_RADIUS = 15
 PADDING = 10
 
-bckg_1 = Button((300, 460), RED)
-
 # Draw text
 def draw_text(text, x, y, center=False):
     txt_surface = font.render(text, True, BLACK)
@@ -46,6 +44,10 @@ class Button:
 
     def is_pressed(self, pos):
         return self.rect.collidepoint(pos)
+
+class Background:
+    def draw(self):
+        pygame.draw(scree, RED, border_radius=320)
 
 # Format time to HH:MM:SS
 def format_time(seconds):
@@ -87,7 +89,7 @@ def run_timer_app():
 
     while True:
         screen.fill(BASE)
-        bckg_1.draw()
+        Background.draw()
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
