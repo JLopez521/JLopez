@@ -4,7 +4,7 @@ import sys
 
 # Initialize pygame
 pygame.init()
-screen = pygame.display.set_mode((320, 480))
+screen = pygame.display.set_mode((480, 320))
 pygame.display.set_caption("Timer & Stopwatch")
 font = pygame.font.SysFont(None, 32)
 
@@ -58,9 +58,9 @@ def run_timer_app():
     # Main buttons
     timer_btn = Button((50, 20, 120, 40), "Timer")
     sw_btn = Button((190, 20, 120, 40), "Stopwatch")
-    start_btn = Button((30, 420, 90, 40), "Start")
-    stop_btn = Button((135, 420, 90, 40), "Stop")
-    reset_btn = Button((240, 420, 90, 40), "Reset")
+    start_btn = Button((30, 300, 90, 40), "Start")
+    stop_btn = Button((135, 300, 90, 40), "Stop")
+    reset_btn = Button((240, 300, 90, 40), "Reset")
 
     # Increment buttons (top half)
     inc_h1 = Button((30, 80, 70, 40), "+1h")
