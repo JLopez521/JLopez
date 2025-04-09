@@ -4,7 +4,7 @@ import sys
 
 # Initialize pygame
 pygame.init()
-screen = pygame.display.set_mode((360, 480))
+screen = pygame.display.set_mode((320, 480))
 pygame.display.set_caption("Timer & Stopwatch")
 font = pygame.font.SysFont(None, 32)
 
@@ -14,6 +14,16 @@ BLACK = (0, 0, 0)
 GRAY = (200, 200, 200)
 BLUE = (100, 149, 237)
 BASE = (107, 106, 105)
+RED = (161, 73, 67)
+LIGHT_GRAY = (217, 217, 217)
+GOLD = (194, 148, 83)
+
+BORDER_WIDTH = 4
+OUTER_RADIUS = 15
+INNER_RADIUS = 15
+PADDING = 10
+
+bckg_1 = Button((300, 460))
 
 # Draw text
 def draw_text(text, x, y, center=False):
@@ -77,6 +87,7 @@ def run_timer_app():
 
     while True:
         screen.fill(BASE)
+        bckg_1.draw()
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
